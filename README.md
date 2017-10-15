@@ -1,6 +1,7 @@
 
 pkg
 ===
+
 [![Build Status](https://travis-ci.org/dfrail24/pkg.svg?branch=master)](https://travis-ci.org/dfrail24/pkg)
 
 The goal of pkg is to allow the user to easily import FARS data into R and create simple summary statistics/visualization from the imported data.
@@ -22,7 +23,11 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 ## basic example code
+
+# Create filename
 filename <- pkg::make_filename(2013)
+
+# Read the file
 pkg::fars_read(filename)
 #> # A tibble: 30,202 x 50
 #>    STATE ST_CASE VE_TOTAL VE_FORMS PVH_INVL  PEDS PERNOTMVIT PERMVIT
@@ -48,6 +53,8 @@ pkg::fars_read(filename)
 #> #   NOT_HOUR <int>, NOT_MIN <int>, ARR_HOUR <int>, ARR_MIN <int>,
 #> #   HOSP_HR <int>, HOSP_MN <int>, CF1 <int>, CF2 <int>, CF3 <int>,
 #> #   FATALS <int>, DRUNK_DR <int>
+
+# Create a map
 pkg::fars_map_state(1, 2013)
 ```
 
