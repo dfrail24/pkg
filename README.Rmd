@@ -1,0 +1,37 @@
+---
+output: github_document
+---
+
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# pkg
+
+The goal of pkg is to allow the user to easily import FARS data into R and create simple summary statistics/visualization from the imported data.
+
+
+## Installation
+
+You can install pkg from github with:
+
+```{r gh-installation, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("dfrail24/pkg")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+## basic example code
+filename <- pkg::make_filename(2013)
+pkg::fars_read(filename)
+pkg::fars_map_state(1, 2013)
+```
