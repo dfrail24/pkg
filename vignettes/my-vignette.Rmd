@@ -1,0 +1,25 @@
+---
+title: "FARS Data"
+author: "Dayae Frail"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+The functions provided in this `pkg` package use data from the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System, which is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes. 
+
+The functions allow the user to easily import FARS data into R and create simple summary statistics/visualization from the imported data.
+
+
+## Pkg Info
+
+This package has 5 functions that the user can utilize
+- fars_read: To import csv file as data frame
+- make_filename: To create filename based on user defined year
+- fars_read_years: To check if data exist for given year and import data
+- fars_summarize_years: Summarize yearly data
+- fars_map_state: Create state map based on given year
+

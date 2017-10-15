@@ -1,0 +1,15 @@
+Package: pkg
+Title: Imports & visualizes FARS data
+Version: 0.0.0.9000
+Author: Dayae Frail
+Description: This package is designed to read in FARS data (CSV format) and show a summary visualization.
+Depends:
+  dplyr,
+  R (>= 3.3.3)
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
