@@ -2,6 +2,7 @@ Package: pkg
 Title: Imports & visualizes FARS data
 Version: 0.0.0.9000
 Author: Dayae Frail
+Maintainer: Dayae Frail <dfrail24@outlook.com>
 Description: This package is designed to read in FARS data (CSV format) and show a summary visualization.
 Depends:
   dplyr,
